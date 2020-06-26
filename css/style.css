@@ -1,0 +1,98 @@
+@media screen and (max-width: 480px) {
+        #tuf{
+            
+        }
+
+}
+body{
+    margin: 0;
+    animation-name:fadein ;
+    animation-duration: 1s;
+}
+
+#tuf{
+    justify-content: center;
+    -webkit-box-align: center;
+    position: fixed;
+    height: 100vh;
+    min-width: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    font-weight: bolder;
+}
+.hi{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    top: 40vh;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+
+}
+a{
+    color: black;
+}
+.old{
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    border-radius: 2em;
+    border: .2em #222 solid;
+    padding: .5em;
+    transition: .5s;
+    text-shadow: 2px 2px 0px white;
+}
+.contact{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    border: .2em #222 solid;
+    border-radius: 2em;
+    padding: .5em;
+    transition: .5s;
+    text-shadow: 2px 2px 0px white;
+
+}
+.contact:hover,.old:hover{
+    background-color: #222;
+    color: aliceblue;
+    cursor: pointer;
+    text-shadow: none;
+}
+.contact h6,.old h6{
+    padding-top: .4em;
+}
+.foot{
+    position: absolute;
+    width: 100%;
+    bottom: 1vh;
+    color: aliceblue;
+}
+.more>h2:hover{
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.more{
+    position: absolute;
+    width: auto;
+    text-align: center;
+    padding: .5em;
+}
+.more>h2{
+    font-family: comic;
+    text-shadow: 2px 2px 5px black;
+    line-height: .5em;
+}
+@keyframes fadein {
+    from  {opacity: .1;}
+
+    to {opacity: 1;}
+}
+@keyframes blink{
+    0%  {opacity: .5;}
+    50%{opacity: 1;}
+    100% {opacity: .5;}
+}
