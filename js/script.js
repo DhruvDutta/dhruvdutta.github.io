@@ -8,4 +8,16 @@ $(
 
     }
 );
+function slide(){
+    var back = document.getElementById('tuf');
+    back.style.transition = 'all 1.5s ease-in-out';
+    back.style.marginTop = '-100vh';
+    var page = document.getElementById('first-page');
+    page.style.transition = 'all .75s ease-in-out';
+    page.style.marginTop = '-100vh';
+    $('.fbtn,.foot').hide();
+    setTimeout(function(){
+        $('#tuf,#first-page').hide();
+    },15000)
+}
 
