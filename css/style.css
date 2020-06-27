@@ -8,6 +8,7 @@ body{
     animation-name:fadein ;
     font-family: comic;
     animation-duration: 1s;
+    background:linear-gradient(#222,red 100%)
 }
 
 #tuf{
@@ -139,22 +140,23 @@ a{
     margin-top: 1em;
     font-family: luminica;
     font-size: 2em;
-    color: white;
-    text-shadow: 2px 2px 4px white;
+    text-shadow: 2px 2px 4px black;
     background: rgba(0, 0, 0, .2);
     border-radius: .2em;
     width: auto;
     text-align: center;
+    color: aliceblue;
 }
 .me{
     border-radius: 50%;
 }
 .name{
     font-size: 1.5em;
-    color: white;
+    color: aliceblue;
 }
 p{
-    color: white;
+    font-size: 1em;
+    color: aliceblue;
 }
 .skills{
     margin: 1 auto;
@@ -164,19 +166,21 @@ p{
 .skills > div{
     background: rgba(0, 0, 0, .1);
     border-radius: .2em;
-    padding: 1.6em ;
+    padding: 1.5em ;
     float: left;
     margin: .5em;
-
-    color: white;
     height: 120px;
     align-items: baseline;
     vertical-align: middle;
     transition: .5s;
+    color: aliceblue;
 }
 .skills>div:hover{
     background: rgba(0, 0, 0, .5);
-
+    
+}
+.skills>div:hover{
+    transform: scale(.95);
 }
 .skills img{
     width: 60px;
