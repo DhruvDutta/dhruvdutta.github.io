@@ -1,12 +1,12 @@
 @media screen and (max-width: 480px) {
-        #tuf{
-            
-        }
+        
 
 }
 body{
     margin: 0;
+    padding: 0;
     animation-name:fadein ;
+    font-family: comic;
     animation-duration: 1s;
 }
 
@@ -16,24 +16,25 @@ body{
     position: fixed;
     height: 100vh;
     min-width: 100%;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
     font-weight: bolder;
+    overflow: hidden;
 }
 .hi{
-    position: absolute;
+    position: fixed;
     font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
     top: 40vh;
     text-align: center;
     text-shadow: 2px 2px 5px black;
-
+    
 }
 a{
     color: black;
 }
 .old{
-    position: absolute;
+    position: fixed;
     top: 2em;
     left: 2em;
     border-radius: 2em;
@@ -41,50 +42,61 @@ a{
     padding: .5em;
     transition: .5s;
     text-shadow: 2px 2px 0px white;
+    user-select: none;
+
 }
 .contact{
-    position: absolute;
+    position: fixed;
     top: 2em;
     right: 2em;
     border: .2em #222 solid;
     border-radius: 2em;
     padding: .5em;
     transition: .5s;
-    text-shadow: 2px 2px 0px white;
+    text-shadow: 0px 0px 4px white;
+    user-select: none;
 
 }
 .contact:hover,.old:hover{
     background-color: #222;
     color: aliceblue;
     cursor: pointer;
-    text-shadow: none;
+    text-shadow: 2px 2px 5px white;
 }
 .contact h6,.old h6{
     padding-top: .4em;
 }
 .foot{
-    position: absolute;
+    position: fixed;
     width: 100%;
-    bottom: 1vh;
+    bottom: 5vh;
     color: aliceblue;
 }
-.more>h2:hover{
+
+
+.more{
+    position: fixed;
+    width: auto;
+    text-align: center;
+    padding: .5em;
+}
+.more>h3{
+    font-family: comic;
+    text-shadow: 2px 2px 5px black;
+    line-height: .5em;
     animation-name: blink;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-
-.more{
-    position: absolute;
-    width: auto;
-    text-align: center;
-    padding: .5em;
-}
-.more>h2{
-    font-family: comic;
-    text-shadow: 2px 2px 5px black;
-    line-height: .5em;
+#arrow{
+    position: fixed;
+    margin-left: -.5em;
+    animation-name: down;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
 }
 @keyframes fadein {
     from  {opacity: .1;}
@@ -92,7 +104,63 @@ a{
     to {opacity: 1;}
 }
 @keyframes blink{
-    0%  {opacity: .5;}
+    0%  {opacity: .2;}
     50%{opacity: 1;}
-    100% {opacity: .5;}
+    100% {opacity: .2;}
+}
+@keyframes down{
+    0%{margin-top: .2em;}
+    50%{margin-top: .4em;}
+    100%{margin-top: .2em;}
+}
+@keyframes fade_in {
+    from  {opacity: 0;}
+
+    to {opacity: 1;}
+}
+
+.main{
+    animation-name: fade_in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+    display: none;
+}
+#back{
+    height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+    filter: blur(10px);
+    position: fixed;
+    z-index: -1;
+}
+.head{
+    font-family: luminica;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 5px white;
+    background: rgba(0, 0, 0, .2);
+    border-radius: .2em;
+    width: auto;
+    text-align: center;
+}
+.skills{
+    margin: 0 auto;
+    border-radius: .2em;
+}
+.skills > div{
+    background: rgba(0, 0, 0, .2);
+    border-radius: .2em;
+    padding: 1em ;
+    float: left;
+    margin: .5em;
+    animation-duration: .5s;
+    animation-play-state: paused;
+    animation-name: fade_in;
+    animation-timing-function: ease-in-out;
+    color: white;
+    
+}
+.skills img{
+    width: 60px;
 }
