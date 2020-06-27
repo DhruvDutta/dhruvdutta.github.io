@@ -3,7 +3,8 @@ $(
         if(window.innerWidth<window.innerHeight*.75){
         
         var tuf=$('#tuf')
-        tuf.css('left',`-${1556/2}px`)
+                tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
+
         }
 
     }
