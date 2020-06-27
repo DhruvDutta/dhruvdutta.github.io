@@ -6,13 +6,10 @@ $(
         var tuf=$('#tuf')
         tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
         }
-        if(window.innerWidth<400){
-            for(let j=0;j<=10;j++){
-                if(j!=7){
-                    $(`#${j}`).addClass('col-6');
-                }
-            }
-            $('#7').addClass('col-12')
+        slide()
+        for(let j=0;j<=10;j++){
+                $(`#${j}`).addClass('col-md-4 col-6');
+            
         }
     }
 );
@@ -30,6 +27,7 @@ function slide(){
         $('#tuf,#first-page').hide();
         $('.main').css({'display':'block','animation-play-state':'running'});
         ic = setInterval(icons_appear,700);
+        document.querySelector('body').style.background = 'linear-gradient(#222,red 100%)';
     },1400)
 
 }
