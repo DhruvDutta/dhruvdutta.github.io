@@ -1,10 +1,19 @@
+
+
 $(
     function(){
         if(window.innerWidth<window.innerHeight*.75){
         var tuf=$('#tuf')
         tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
         }
-        
+        if(window.innerWidth<400){
+            for(let j=0;j<=10;j++){
+                if(j!=7){
+                    $(`#${j}`).addClass('col-6');
+                }
+            }
+            $('#7').addClass('col-12')
+        }
     }
 );
 
@@ -21,7 +30,7 @@ function slide(){
         $('#tuf,#first-page').hide();
         $('.main').css({'display':'block','animation-play-state':'running'});
         ic = setInterval(icons_appear,700);
-    },1100)
+    },1400)
 
 }
 
