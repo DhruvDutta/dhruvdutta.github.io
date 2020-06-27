@@ -6,7 +6,7 @@ $(
         var tuf=$('#tuf')
         tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
         }
-        slide()
+        
         for(let j=0;j<=10;j++){
                 $(`#${j}`).addClass('col-md-4 col-6');
             
