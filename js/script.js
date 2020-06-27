@@ -5,13 +5,6 @@ $(
         tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
         }
         
-        if(window.innerWidth<1000){
-            for(let j = 1;j <=10;j++){
-                $(`#${j}`).addClass('col-12');
-
-               
-            }
-        }
     }
 );
 
