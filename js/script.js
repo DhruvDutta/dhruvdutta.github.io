@@ -5,7 +5,7 @@ $(
         tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
         }
         
-        slide();
+    
     }
 );
 
