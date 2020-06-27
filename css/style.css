@@ -129,38 +129,61 @@ a{
 #back{
     height: 100vh;
     min-width: 100%;
+    left: 0%;
     overflow: hidden;
     filter: blur(10px);
     position: fixed;
     z-index: -1;
 }
 .head{
+    margin-top: 1em;
     font-family: luminica;
     font-size: 2em;
     color: white;
-    text-shadow: 2px 2px 5px white;
+    text-shadow: 2px 2px 4px white;
     background: rgba(0, 0, 0, .2);
     border-radius: .2em;
     width: auto;
     text-align: center;
 }
+.me{
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.5em;
+    color: white;
+}
+p{
+    color: white;
+}
 .skills{
-    margin: 0 auto;
-    border-radius: .2em;
+    margin: 1 auto;
+    margin-top: 2em;
+    height: auto;
 }
 .skills > div{
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .1);
     border-radius: .2em;
-    padding: 1em ;
+    padding: 1.6em ;
     float: left;
     margin: .5em;
+
+    color: white;
+    height: 120px;
+    align-items: baseline;
+    vertical-align: middle;
+    transition: .5s;
+}
+.skills>div:hover{
+    background: rgba(0, 0, 0, .5);
+
+}
+.skills img{
+    width: 60px;
+}
+.skills>div,#bio{
     animation-duration: .5s;
     animation-play-state: paused;
     animation-name: fade_in;
     animation-timing-function: ease-in-out;
-    color: white;
-    
-}
-.skills img{
-    width: 60px;
 }
