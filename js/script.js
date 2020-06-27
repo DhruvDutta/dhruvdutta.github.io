@@ -12,17 +12,17 @@ $(
 let ic;
 function slide(){
     var back = document.getElementById('tuf');
-    back.style.transition = 'all 1s ease-in-out';
+    back.style.transition = 'all 1.5s ease-in-out';
     back.style.marginTop = '-100vh';
     var page = document.getElementById('dhruv');
-    page.style.transition = `all 1s ease-in-out`;
+    page.style.transition = `all 1.5s ease-in-out`;
     page.style.marginTop = '-100vh';
     $('.fbtn,.foot').hide();
     setTimeout(function(){
         $('#tuf,#first-page').hide();
         $('.main').css({'display':'block','animation-play-state':'running'});
-        ic = setInterval(icons_appear,300);
-    },1100)
+        ic = setInterval(icons_appear,700);
+    },1400)
 
 }
 
