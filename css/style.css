@@ -163,22 +163,26 @@ p{
     height: auto;
 }
 .skills > div{
+    vertical-align: middle;
+    padding: .2em;
+    float: left;
+    height: 150px;
+    color: aliceblue;
+}
+.skills>div>center{
     background: rgba(0, 0, 0, .1);
     border-radius: .2em;
-    padding: 1em ;
-    float: left;
-    height: 120px;
+    height: 100%;
+    padding: 1.5em;
     vertical-align: middle;
-    transition: .5s;
-    color: aliceblue;
+
 }
 .skills>div:hover{
     background: rgba(0, 0, 0, .5);
-    
-}
-.skills>div:hover{
+    transition: .5s;
     transform: scale(.8);
 }
+
 .skills img{
     width: 60px;
 }
