@@ -1,13 +1,11 @@
-@media screen and (max-width: 480px) {
-        
 
-}
 body{
     margin: 0;
     padding: 0;
     animation-name:fadein ;
     font-family: comic;
     animation-duration: 1s;
+    background-repeat: no-repeat;
 }
 
 #tuf{
@@ -73,7 +71,6 @@ a{
     color: aliceblue;
 }
 
-
 .more{
     position: fixed;
     width: auto;
@@ -125,6 +122,7 @@ a{
     animation-timing-function: ease-in-out;
     animation-play-state: paused;
     display: none;
+    
 }
 #back{
     height: 100vh;
@@ -157,38 +155,51 @@ p{
     font-size: 1em;
     color: aliceblue;
 }
+.stuff{
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 .skills{
     margin: 0 auto;
     margin-top: 2em;
     height: auto;
 }
-.skills > div{
+.skills > div , #projects>div{
     vertical-align: middle;
     padding: .2em;
     float: left;
     height: 150px;
     color: aliceblue;
+    text-shadow: 2px 2px 5px black;
 }
-.skills>div>center{
+.skills>div>center ,#projects>div>center{
     background: rgba(0, 0, 0, .1);
     border-radius: .2em;
     height: 100%;
     padding: 1.5em;
     vertical-align: middle;
-
 }
 .skills>div:hover{
     background: rgba(0, 0, 0, .5);
+    border-radius: .3em;
     transition: .5s;
-    transform: scale(.8);
+    transform: scale(.9);
 }
 
 .skills img{
     width: 60px;
+
 }
 .skills>div,#bio{
     animation-duration: .5s;
     animation-play-state: paused;
     animation-name: fade_in;
     animation-timing-function: ease-in-out;
+}
+
+#projects>div>center{
+    padding:3em 0em;
+    font-size: 1.2em;
 }
