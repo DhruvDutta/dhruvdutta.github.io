@@ -6,11 +6,25 @@ $(
         var tuf=$('#tuf')
         tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
         }
-        
+    
         for(let j=0;j<=10;j++){
                 $(`#${j}`).addClass('col-md-4 col-6');
             
         }
+        $('#10').addClass('offset-md-4')
+        $('#projects').fadeToggle();
+        $('.stuff').text('Stuff i use')
+        $(".stuff").click(function(){
+            $(".skills").fadeToggle();
+            $('.stuff').css({'animation-iteration-count':'1'});
+            if($('.stuff').text()=='Stuff i use'){
+                $('.stuff').text('Stuff i made');
+            }else{
+                $('.stuff').text('Stuff i use')
+            }
+            $('#projects').fadeToggle();
+
+        });
     }
 );
 
@@ -27,7 +41,7 @@ function slide(){
         $('#tuf,#first-page').hide();
         $('.main').css({'display':'block','animation-play-state':'running'});
         ic = setInterval(icons_appear,700);
-        document.querySelector('body').style.background = 'linear-gradient(#222,red 100%)';
+        document.querySelector('body').style.background = 'linear-gradient(180deg,#222,red)';
     },1400)
 
 }
