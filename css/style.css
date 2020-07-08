@@ -6,7 +6,6 @@ body{
     animation-name:fadein ;
     font-family: comic;
     animation-duration: 1s;
-    
 }
 .first-page{
     height: 100vh;
@@ -33,6 +32,9 @@ body::-webkit-scrollbar-track{
 }
 .aquamarine::-webkit-scrollbar-thumb{
     background: aquamarine;
+}
+.rainbow::-webkit-scrollbar-thumb{
+    background: linear-gradient(0deg,blue,green,yellow,orange,red);
 }
 #tuf{
     justify-content: center;
@@ -70,6 +72,8 @@ a{
     padding: .5em;
     transition: .2s;
     user-select: none;
+    width: 6em;
+    text-align: center;
 
 }
 .contact{
@@ -77,6 +81,8 @@ a{
     color: aliceblue;
     top: 2em;
     right: 2em;
+    width: 6em;
+    text-align: center;
     box-shadow: 0 0 5px #fff;
     border-radius: .5em;
     padding: .5em;
@@ -104,6 +110,7 @@ a{
     width: auto;
     text-align: center;
     padding: .5em;
+    cursor: pointer;
 }
 .more>h3{
     font-family: comic;
@@ -188,6 +195,7 @@ p{
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    cursor:pointer;
 }
 .skills{
     margin: 0 auto;
