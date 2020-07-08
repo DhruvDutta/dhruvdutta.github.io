@@ -1,12 +1,13 @@
-
-
+var bg_animation;
+bg_colors=['red','blue','white','green','orange']
+current_color=0;
 $(
     function(){
         if(window.innerWidth<window.innerHeight*.75){
         var tuf=$('#tuf')
         tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
         }
-    
+        //slide()
         for(let j=0;j<=10;j++){
                 $(`#${j}`).addClass('col-md-4 col-6');
             
@@ -25,23 +26,25 @@ $(
             $('#projects').fadeToggle();
 
         });
+        $('body').css('background','linear-gradient(180deg,#222 ,red)');
     }
 );
 
 let ic;
 function slide(){
-    var back = document.getElementById('tuf');
+    /*var back = document.getElementById('tuf');
     back.style.transition = 'all 1.2s ease-in-out';
-    back.style.marginTop = '-100vh';
+    back.style.marginTop = '-100vh';*/
     var page = document.getElementById('dhruv');
     page.style.transition = `all 1.2s ease-in-out`;
     page.style.marginTop = '-100vh';
+    clearInterval(bg_animation)
     $('.fbtn,.foot').hide();
     setTimeout(function(){
         $('#tuf,#first-page').hide();
         $('.main').css({'display':'block','animation-play-state':'running'});
         ic = setInterval(icons_appear,700);
-        document.querySelector('body').style.background = 'linear-gradient(180deg,#222,red)';
+        document.querySelector('body').style.background = `linear-gradient(180deg,#222,${bg_colors[current_color]})`;
     },1400)
 
 }
@@ -72,4 +75,10 @@ function icons_appear_random(){
     }else{
             $(`#${r}`).css('animation-play-state','running');
     }
+}
+
+function theme(){
+    current_color+=1;
+    current_color%=bg_colors.length;
+    $('body').css('background',`linear-gradient(180deg,#222 ,${bg_colors[current_color]})`);
 }
