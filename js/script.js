@@ -1,5 +1,5 @@
 var bg_animation;
-bg_colors=['red','blue','white','green','orange']
+bg_colors=['red','blue','white','aquamarine']
 current_color=0;
 $(
     function(){
@@ -26,7 +26,7 @@ $(
             $('#projects').fadeToggle();
 
         });
-        $('body').css('background','linear-gradient(180deg,#222 ,red)');
+        $('body').css('background','linear-gradient(180deg,#222,red )');
     }
 );
 
@@ -44,7 +44,8 @@ function slide(){
         $('#tuf,#first-page').hide();
         $('.main').css({'display':'block','animation-play-state':'running'});
         ic = setInterval(icons_appear,700);
-        document.querySelector('body').style.background = `linear-gradient(180deg,#222,${bg_colors[current_color]})`;
+        document.querySelector('body').style.background = `linear-gradient(180deg,#222,${bg_colors[current_color]} 50%)`;
+        $('body').addClass(`${bg_colors[current_color]}`);
     },1400)
 
 }
@@ -80,5 +81,7 @@ function icons_appear_random(){
 function theme(){
     current_color+=1;
     current_color%=bg_colors.length;
-    $('body').css('background',`linear-gradient(180deg,#222 ,${bg_colors[current_color]})`);
+    $('body').css('background',`linear-gradient(180deg,#222 ,${bg_colors[current_color]} 100%)`);
 }
+
+//setInterval(theme,2000)
