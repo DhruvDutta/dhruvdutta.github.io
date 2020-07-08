@@ -6,7 +6,7 @@ body{
     animation-name:fadein ;
     font-family: comic;
     animation-duration: 1s;
-
+    
 }
 .first-page{
     height: 100vh;
@@ -22,9 +22,17 @@ body::-webkit-scrollbar:hover{
 body::-webkit-scrollbar-track{
     background: #1e1e24;
 }
-body::-webkit-scrollbar-thumb{
+.red::-webkit-scrollbar-thumb{
     background: red;
-
+}
+.blue::-webkit-scrollbar-thumb{
+    background: blue;
+}
+.white::-webkit-scrollbar-thumb{
+    background: white;
+}
+.aquamarine::-webkit-scrollbar-thumb{
+    background: aquamarine;
 }
 #tuf{
     justify-content: center;
