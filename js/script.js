@@ -1,6 +1,7 @@
 var bg_animation;
-bg_colors=['red','blue','white','aquamarine']
-current_color=0;
+bg_colors=['red','blue','white','aquamarine','blue,green,yellow,orange,red']
+current_color=4;
+deg=120;
 $(
     function(){
         if(window.innerWidth<window.innerHeight*.75){
@@ -26,7 +27,7 @@ $(
             $('#projects').fadeToggle();
 
         });
-        $('body').css('background','linear-gradient(180deg,#222,red )');
+        $('body').css('background',`linear-gradient(${deg}deg,#222,${bg_colors[current_color]})`);
     }
 );
 
@@ -44,7 +45,7 @@ function slide(){
         $('#tuf,#first-page').hide();
         $('.main').css({'display':'block','animation-play-state':'running'});
         ic = setInterval(icons_appear,700);
-        document.querySelector('body').style.background = `linear-gradient(180deg,#222,${bg_colors[current_color]} 50%)`;
+        $('body').css('background',`linear-gradient(${deg}deg,#222,${bg_colors[current_color]} 90%) `);
         $('body').addClass(`${bg_colors[current_color]}`);
     },1400)
 
@@ -81,7 +82,14 @@ function icons_appear_random(){
 function theme(){
     current_color+=1;
     current_color%=bg_colors.length;
-    $('body').css('background',`linear-gradient(180deg,#222 ,${bg_colors[current_color]} 100%)`);
+    
+    if(current_color==4){
+        deg=120;
+        $('body').css('background',`linear-gradient(${deg}deg,#222 ,${bg_colors[current_color]})`);
+    }else{
+        deg=180;
+        $('body').css('background',`linear-gradient(${deg}deg,#222 ,${bg_colors[current_color]} )`);
+    }
 }
 
 //setInterval(theme,2000)
