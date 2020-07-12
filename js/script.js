@@ -1,7 +1,7 @@
 var bg_animation;
 bg_colors=['red','blue','white','aquamarine','blue,green,yellow,orange,red']
 current_color=0;
-deg=120;
+deg=180;
 $(
     function(){
         if(window.innerWidth<window.innerHeight*.75){
