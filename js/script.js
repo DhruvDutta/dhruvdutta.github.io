@@ -1,6 +1,6 @@
 var bg_animation;
 bg_colors=['red','blue','white','aquamarine','blue,green,yellow,orange,red']
-current_color=4;
+current_color=0;
 deg=120;
 $(
     function(){
