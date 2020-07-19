@@ -1,7 +1,7 @@
 var bg_animation;
-bg_colors=['red','blue','white','aquamarine','blue,green,yellow,orange,red']
+bg_colors=['red','blue'/*,'white','aquamarine','blue,green,yellow,orange,red'*/]
 current_color=0;
-deg=180;
+deg=120;
 $(
     function(){
         if(window.innerWidth<window.innerHeight*.75){
@@ -46,7 +46,12 @@ function slide(){
         $('.main').css({'display':'block','animation-play-state':'running'});
         ic = setInterval(icons_appear,700);
         $('body').css('background',`linear-gradient(${deg}deg,#222,${bg_colors[current_color]} 90%) `);
+        if(current_color==4){
+        $('body').addClass(`rainbow`);
+        }else{
         $('body').addClass(`${bg_colors[current_color]}`);
+
+        }
     },1400)
 
 }
@@ -82,14 +87,8 @@ function icons_appear_random(){
 function theme(){
     current_color+=1;
     current_color%=bg_colors.length;
-    
-    if(current_color==4){
-        deg=120;
-        $('body').css('background',`linear-gradient(${deg}deg,#222 ,${bg_colors[current_color]})`);
-    }else{
-        deg=180;
-        $('body').css('background',`linear-gradient(${deg}deg,#222 ,${bg_colors[current_color]} )`);
-    }
+    deg=120;
+    $('body').css('background',`linear-gradient(${deg}deg,#222 ,${bg_colors[current_color]} )`);
 }
 
 //setInterval(theme,2000)
