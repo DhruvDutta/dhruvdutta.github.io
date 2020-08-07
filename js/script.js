@@ -4,11 +4,6 @@ current_color=0;
 deg=120;
 $(
     function(){
-        if(window.innerWidth<window.innerHeight*.75){
-        var tuf=$('#tuf')
-        tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
-        }
-        
         for(let j=0;j<=10;j++){
                 $(`#${j}`).addClass('col-md-4 col-6');
             
