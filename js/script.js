@@ -45,7 +45,8 @@ function slide(){
         $('#tuf,#first-page').hide();
         $('.main').css({'display':'block','animation-play-state':'running'});
         ic = setInterval(icons_appear,700);
-        $('body').css('background',`linear-gradient(${deg}deg,#222,${bg_colors[current_color]} 90%) `);
+        //$('body').css('background',`linear-gradient(${deg}deg,#222,${bg_colors[current_color]} 90%) `);
+        $('body').css('background',`#2e9cca`);
         if(current_color==4){
         $('body').addClass(`rainbow`);
         }else{
