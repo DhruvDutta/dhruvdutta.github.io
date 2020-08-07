@@ -6,6 +6,8 @@ body{
     animation-name:fadein ;
     font-family: comic;
     animation-duration: 1s;
+
+
 }
 .first-page{
     height: 100vh;
@@ -26,7 +28,7 @@ body::-webkit-scrollbar-track{
 }
 .blue::-webkit-scrollbar-thumb{
     background: blue;
-}
+}/*
 .white::-webkit-scrollbar-thumb{
     background: white;
 }
@@ -35,13 +37,16 @@ body::-webkit-scrollbar-track{
 }
 .rainbow::-webkit-scrollbar-thumb{
     background: linear-gradient(0deg,blue,green,yellow,orange,red);
-}
+}*/
 #tuf{
     justify-content: center;
     -webkit-box-align: center;
     position: fixed;
     height: 100vh;
     min-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     filter: blur(1px);
     -webkit-filter: blur(1px);
     font-weight: bolder;
@@ -55,40 +60,34 @@ body::-webkit-scrollbar-track{
     transform: translateY(-50%);
     text-align: center;
     text-shadow: 2px 2px 5px black;
+
     
 }
 a{
     color: black;
 }
 
-
-.old{
+.old,.contact{
     position: fixed;
-    color: aliceblue;
-    top: 2em;
-    left: 2em;
+    color: white;
+    background:#3500d3;
     border-radius: .5em;
-    box-shadow: 0px 0px 5px #fff;
-    padding: .5em;
+    box-shadow: 0px 0px 5px #222;
+    text-align: center;
     transition: .2s;
     user-select: none;
-    width: 6em;
-    text-align: center;
+    padding: .5em;
 
 }
+.old{
+    top: 2em;
+    left: 2em;
+    width: 6em;
+}
 .contact{
-    position: fixed;
-    color: aliceblue;
     top: 2em;
     right: 2em;
     width: 6em;
-    text-align: center;
-    box-shadow: 0 0 5px #fff;
-    border-radius: .5em;
-    padding: .5em;
-    transition: .2s;
-    user-select: none;
-
 }
 .contact:hover,.old:hover{
     box-shadow:  0 0 5px #FFF,0 0 15px #FFF,0 0 30px #FFF;
@@ -150,6 +149,7 @@ a{
 
     to {opacity: 1;}
 }
+
 
 .main{
     animation-name: fade_in;
@@ -241,4 +241,19 @@ p{
 }
 #projects a{
     color: aliceblue;
+
+}
+#projects a{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-900deg);
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+  
+    /* Opera */
+    -o-transform: rotate(-90deg);
+  
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
