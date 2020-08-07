@@ -1,5 +1,5 @@
 var bg_animation;
-bg_colors=['red','blue'/*,'white','aquamarine','blue,green,yellow,orange,red'*/]
+bg_colors=['blue',/*'red','white','aquamarine','blue,green,yellow,orange,red'*/]
 current_color=0;
 deg=120;
 $(
@@ -8,7 +8,7 @@ $(
         var tuf=$('#tuf')
         tuf.css('margin-left',`-${$('#tuf').width()/2}px`)
         }
-        //slide()
+        
         for(let j=0;j<=10;j++){
                 $(`#${j}`).addClass('col-md-4 col-6');
             
@@ -27,7 +27,7 @@ $(
             $('#projects').fadeToggle();
 
         });
-        $('body').css('background',`linear-gradient(${deg}deg,#222,${bg_colors[current_color]})`);
+        //$('body').css('background',`linear-gradient(${deg}deg,#222,${bg_colors[current_color]})`);
     }
 );
 
