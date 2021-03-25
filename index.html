@@ -1,176 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link id="theme" rel="stylesheet" href="css/style1.css">
     <title>Dhruv Dutta</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-
-</head>
-<body id='body'>
-    <img src="./css/img/tuf6.jpg" id="tuf"alt="">
-    <div class="container-fluid" id="first-page">
-        <div class="old fbtn" >
-            <h6 onclick="theme()">Theme</h6>
-        </div>
-        <div class="contact fbtn" >
-            <h6>Say Hello</h6>
-        </div>
-        <div class="row">
-            <div class="hi col-12 justify-content-center offset-md-3 col-md-6">
-                <h1 id="dhruv"><strong>Web Developer,Game Developer <br>and Programmer</strong></h1>
-            </div>
-        </div>
-        
-        <div class="foot row ">
-            <div class="more col-sm-4 offset-sm-4">
-                <h3 class="enter" onclick="slide()">Learn more<br><i class="fa fa-chevron-down"id="arrow" ></i></h3>
-            </div>
-        </div>
+    <style>
+        .toggle-theme{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 10vh;
+            width: 10vh;
+            z-index: 10;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="toggle-theme" onclick="toggle();">
     </div>
-        
-    
-    <div class="container main">
-        <!--<img src="./css/img/tuf2.jpg" id="back" alt="">-->
-        <div class="row">
-            <div class="col-md-6 offset-md-3 col-12" style="background: rgba(0, 0, 0, .1);">
-                <div class="row">
-                    <div class="head col-md-4 offset-md-4 col-6 offset-3" id="profile">
-                        About me
-                    </div>
-                    <div class="text-center name col-md-6 offset-md-3 col-12  mt-5 mb-3">
-                        <big> Hi, I'am Dhruv</big>
-                    </div>
+    <div id="hello" style="--i:0;">
+        <svg viewBox="0 0 1350 600" height="100vh" width="100vw" >
+            <text x="50%" y="50%" text-anchor="middle">
+                HELLO
+            </text>
+        </svg>
+    </div><!--
+    <div class="bighello" style="--i:1;">
+        <svg viewBox="0 0 1350 600" height="200vh" width="100vw" >
+            <text x="50%" y="50%" text-anchor="middle">
+                DHRUV
+            </text>
+        </svg>
+    </div>-->
+    <div class="dhruv" style="--i:1;">
+        <span>D</span>
+        <span>H</span>
+        <span>R</span>
+        <span>U</span>
+        <span>V</span>
+    </div>
+    <div class="container-fluid main">
+        <div class="row heading">
+            <div class="col col-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="iamdhruv">
+                    <svg viewBox="0 0 1350 600" height="10em" width="80vw" >
+                        <text x="50%" y="75%" fill="transparent" text-anchor="middle">
+                            Hello I'm Dhruv
+                        </text>
+                    </svg>
+                    <span></span>
                 </div>
+            </div>
+        </div>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+    </div>
+    <div class="container-fluid home">
+        <div class="row navbar">
+            <div class="col-12 d-flex flex-row justify-content-start align-items-center px-5">
+                <div class="nav-obj px-5">
+                    <span style="--i:1">H</span>
+                    <span style="--i:2">O</span>
+                    <span style="--i:3">M</span>
+                    <span style="--i:4">E</span>
+                    <span style="--i:5">HOME</span>
+                </div>
+                <div class="nav-obj px-5">
+                    <span style="--i:1">A</span>
+                    <span style="--i:2">B</span>
+                    <span style="--i:3">O</span>
+                    <span style="--i:4">U</span>
+                    <span style="--i:5">T</span>
+                    <span style="--i:6">ABOUT</span>
+                </div>
+                <div class="nav-obj px-5">
+                    <span style="--i:1">P</span>
+                    <span style="--i:2">R</span>
+                    <span style="--i:3">O</span>
+                    <span style="--i:4">J</span>
+                    <span style="--i:5">E</span>
+                    <span style="--i:6">C</span>
+                    <span style="--i:7">T</span>
+                    <span style="--i:8">S</span>
+                    <span style="--i:9">PROJECTS</span>
+                </div>
+                <div class="nav-obj px-5">
+                    <span style="--i:1">C</span>
+                    <span style="--i:2">O</span>
+                    <span style="--i:3">N</span>
+                    <span style="--i:4">T</span>
+                    <span style="--i:5">A</span>
+                    <span style="--i:6">C</span>
+                    <span style="--i:7">T</span>
+                    <span style="--i:8">CONTACT</span>
 
-                <div class="row" id="bio">
-                    <div class="me col-md-4 offset-md-0 col-6 offset-3 ">
-                        <img src="./css/img/me.jpg" class="me" width="100%" alt="">
-                    </div>
-                    <div class="col-md-8 col-12 align-middle my-4">
-                        <p>I like to create projects. Projects that would require something beyond my knowledge. I like to stir things togeather to see what colors i can make. My dream is to create a color that can be held above all others.</p>
-                    </div>
+                    
                 </div>
-                <div class="row">
-                    <div class="head col-md-4 offset-md-4 col-6 offset-3 stuff" id="profile">
-                        Stuff i use
+            </div>
+        </div>
+        <div class="row projects mx-5">
+            <div class="col-sm-3 col-8" style="display: none;">
+                <div class="p-card" onclick="location.href='http://dhruvdutta.github.io/asteroidshooter'">
+                    <div class="imgbox">
+                        <img src="./css/img/asteroid.png" alt="" srcset="">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="skills col-12">
-                        <div id="1"> 
-                            <center>
-                                <img src="./css/img/py.png" alt="" ><br>
-                                Python
-                            </center>
-                        </div>
-                        <div id="2">
-                            <center>
-                                <img src="./css/img/js.png" alt=""><br>
-                                JavaScript
-                            </center>
-                        </div>
-                        <div id="3">
-                        <center >
-                            <img src="./css/img/node.png" alt=""><br>
-                            Node.js
-                        </center>
-                        </div>
-                        <div id="4">
-                        <center>
-                            <img src="./css/img/jq.png" alt=""> <br>
-                            jQuery
-                        </center>
-                        </div>
-                        <div id="5">
-                        <center>
-                            <img src="./css/img/ph.png" width="50px" alt="" style="margin-top: 2em;"> <br>
-                            Phaser 3
-                        </center>
-                        </div>
-                        <div id="6">
-                            <center>
-                                <img src="./css/img/boot.png" alt=""> <br>
-                                Bootstrap
-                            </center>
-                        </div>
+                    <div class="content">
+                        <a href="http://">Asteroid Shooter</a>
                         
-                        <div id="7">
-                            <center>
-                                <img src="./css/img/net.png" alt=""> <br>
-                                Netbeans
-                            </center>
-                        </div>
-                        <div id="8">
-                            <center>
-                                <img src="./css/img/htm.png" alt=""> <br>
-                                HTML
-                            </center>
-                        </div>
-                        <div id="9">
-                            <center>
-                                <img src="./css/img/css.png" alt=""> <br>
-                                CSS
-                            </center>
-                        </div>
-                        <div id="10">
-                            <center>
-                                <img src="./css/img/sql.png" alt=""> <br>
-                                MySQL
-                            </center>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5" >
-                    <div class="col-12" id="projects">
-                        <div class="col-md-4 col-6">
-                            <center>
-                                <a href="">Asteroid Shooter</a>
-                            </center>
-                        </div>
-                        <div class="col-md-4 col-6">
-                            <center>
-                                <a href="">Your Fish</a>
-                            </center>
-                        </div>
-                        <div class="col-md-4 col-6">
-                            <center>
-                                <a href="">Catch The Bee</a>
-                            </center>
-                        </div>
-                        <!--<div class="col-md-4 col-6">
-                            <center>
-                                <a href="">Beat The Potato</a>
-                            </center>
-                        </div>-->
-                        <div class="col-md-4 col-6">
-                            <center>
-                                <a href="">Snake And Ladders</a>
-                            </center>
-                        </div>
-                        <div class="col-md-4 col-6">
-                            <center>
-                                <a href="">Tic-Tac-Toe</a>
-                            </center>
-                        </div>
-                        <div class="col-md-4 col-6">
-                            <center>
-                                <a href="">The Ball</a>
-                            </center>
-                        </div>
+                        <p>An Asteroid Shooting game with Touch Controls</p>
                     </div>
                 </div>
             </div>
+            <div class="col-sm-3 col-8">
+                <div class="p-card" onclick="location.href='http://dhruvdutta.github.io/Catch-The-Bee'">
+                    <div class="imgbox">
+                        <img src="./css/img/bee.png" alt="" srcset="">
+                    </div>
+                    <div class="content">
+                        <a href="http://">Catch The Bee</a>
+                        <p>An interactive Bee Catching Game</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-8">
+                <div class="p-card" onclick="location.href='http://dhruvdutta.github.io/yourfish'">
+                    <div class="imgbox">
+                        <img src="./css/img/fish.png" alt="" srcset="">
+                    </div>
+                    <div class="content">
+                        <a href="http://">Your Fish</a>
+                        <p>Feed Your Fish</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-8">
+                <div class="p-card" onclick="location.href='http://dhruvdutta.github.io/TicTacToe'">
+                    <div class="imgbox">
+                        <img src="./css/img/tictactoe.png" alt="" srcset="">
+                    </div>
+                    <div class="content">
+                        <a href="http://">TicTacToe</a>
+                        <p>[You Know this Game Already]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-8">
+                <div class="p-card" onclick="location.href='http://dhruvdutta.github.io/btp'">
+                    <div class="imgbox">
+                        <img src="./css/img/btp1.png" alt="" srcset="">
+                    </div>
+                    <div class="content">
+                        <a href="http://">Beat The Potato</a>
+                        <p>A TicTacToe Game With my Potato AI</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
-    
-    
-</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/d5befc3ef6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
