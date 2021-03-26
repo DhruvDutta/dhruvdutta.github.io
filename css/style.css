@@ -99,7 +99,7 @@ body::-webkit-scrollbar-thumb{
 }
 @keyframes bar{
     to{
-        height: 40vh;
+        height: 15vw;
     }
 }
 @keyframes fadein{
@@ -167,7 +167,7 @@ body::-webkit-scrollbar-thumb{
     background-color: #fffffe;
 }
 .projects>div{
-    height: 50vh;
+    height: 40vh;
 }
 .p-card{
     position: relative;
@@ -177,9 +177,8 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 8vw;
+    min-height: 12em;
     padding: 20px;
-    margin: 20px;
     background-color: #fffffe;
     border-radius: 3px;
     box-shadow: 0 5px 200px rgba(0, 0, 0, 0.5);
@@ -236,8 +235,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .nav-obj:hover span:not(:last-child){
-    transition: .5s;
-    transition-delay: calc(.1s * var(--i));
+    transition: .3s;
+    transition-delay: calc(.05s * var(--i));
     transform: translateY(-100%);
     
 }
@@ -254,8 +253,8 @@ body::-webkit-scrollbar-thumb{
     transform: translate(-50%,0%);
 }
 .nav-obj:hover span:last-child{
-    transition: .5s;
-    transition-delay: calc(.1s * var(--i));
+    transition: .3s;
+    transition-delay: calc(.05s * var(--i));
     transform: translate(-50%,-100%);
     
 }
