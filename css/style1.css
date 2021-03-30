@@ -9,9 +9,8 @@
 }
 body{
     position: relative;
-    width: 100vw;
-    overflow-x: hidden;
     background-color: #e3f6f5;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar{
     width: .5em;
@@ -50,14 +49,22 @@ body::-webkit-scrollbar-thumb{
     mix-blend-mode: difference;
     font-size: 6em;
     stroke-width: 2;
-    animation: textanimate 2s ease-in-out;
+    animation: textanimate 4s ease-in-out forwards;
 }
 @keyframes textanimate{
     0%{
         stroke-dasharray: 0 50%;
     }
-    100%{
+    50%{
+        fill: transparent;
+    }
+    70%{
         stroke-dasharray: 50% 0;
+        
+    }
+    100%{
+        
+        fill: #d3d3d3;
     }
 }
 .heading{
@@ -104,15 +111,7 @@ body::-webkit-scrollbar-thumb{
     
 }
 
-.view-my-work{
-    font-size: 1.2rem;
-    color:#fffffe;
-    border:2px solid #fffffe;
-    padding: .5em;
-    border-radius: .2em;
-}
 .home{
-    position: absolute;
     background-color: #e3f6f5;
     min-height: 100vh;
 }
@@ -121,7 +120,7 @@ body::-webkit-scrollbar-thumb{
     height: 5em;
     background-color: #272343;
     color: #e3f6f5;
-    border-top: 2px solid #e3f6f5;
+    box-shadow: 0 2px 7px #222222;
 }
 .navbar>div>div{
     display: flex;
@@ -170,6 +169,7 @@ body::-webkit-scrollbar-thumb{
 }
 .p-card:hover img{
     top: 0em;
+
 }
 .p-card a{
     color: #2d334a;
