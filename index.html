@@ -1,230 +1,257 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link id="theme" rel="stylesheet" href="css/style1.css">
-    <title>Dhruv Dutta</title>
-    <style>
-        .toggle-theme{
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 10vh;
-            width: 10vh;
-            z-index: 10;
-            cursor: pointer;
-        }
-    </style>
-  </head>
-  <body>
-    <div class="toggle-theme" onclick="toggle();">
-    </div>
-    <div id="hello" style="--i:0;">
-        <svg viewBox="0 0 1350 600" height="100vh" width="100vw" >
-            <text x="50%" y="50%" text-anchor="middle">
-                HELLO
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link id="theme" rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="./css/about.css">
+<link rel="stylesheet" href="./css/projects.css">
+<title>Dhruv Dutta</title>
+<style>
+    .toggle-theme{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 10vh;
+        width: 10vh;
+        z-index: 10;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="iamdhruv">
+        <svg viewBox="0 0 1350 600"  >
+            <text x="50%" y="50%" text-anchor="middle" id="maintext">
+                Hello I'm Dhruv
             </text>
         </svg>
-    </div><!--
-    <div class="bighello" style="--i:1;">
-        <svg viewBox="0 0 1350 600" height="200vh" width="100vw" >
-            <text x="50%" y="50%" text-anchor="middle">
-                DHRUV
-            </text>
-        </svg>
-    </div>-->
-    
-    <div class="dhruv" style="--i:1;">
-        <span>D</span>
-        <span>H</span>
-        <span>R</span>
-        <span>U</span>
-        <span>V</span>
     </div>
-    <div class="container-fluid main">
-        <div class="row heading">
-            <div class="col col-12 d-flex flex-column justify-content-center align-items-center">
-                <div class="iamdhruv">
-                    <svg viewBox="0 0 1350 600" height="10em" width="80vw" >
-                        <text x="50%" y="75%" text-anchor="middle" id="maintext">
-                            Hello I'm Dhruv
-                        </text>
-                    </svg>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <span style="--i:1;"></span>
-        <span style="--i:2;"></span>
-        <span style="--i:3;"></span>
-        <span style="--i:4;"></span>
-    </div>
-    <div class="container-fluid home">
-        <div class="row navbar">
-            <div class="col-12 col-sm-4 d-flex flex-row justify-content-start align-items-center">
-                <div class="nav-obj px-2 col">
-                    <span style="--i:0">H</span>
-                    <span style="--i:1">O</span>
-                    <span style="--i:2">M</span>
-                    <span style="--i:3">E</span>
-                    <span style="--i:4">HOME</span>
-                </div>
-                <div class="nav-obj px-2 col">
-                    <span style="--i:0">A</span>
-                    <span style="--i:1">B</span>
-                    <span style="--i:2">O</span>
-                    <span style="--i:3">U</span>
-                    <span style="--i:4">T</span>
-                    <span style="--i:5">ABOUT</span>
-                </div>
-                <div class="nav-obj px-2 col">
-                    <span style="--i:0">P</span>
-                    <span style="--i:1">R</span>
-                    <span style="--i:2">O</span>
-                    <span style="--i:3">J</span>
-                    <span style="--i:4">E</span>
-                    <span style="--i:5">C</span>
-                    <span style="--i:6">T</span>
-                    <span style="--i:7">S</span>
-                    <span style="--i:8">PROJECTS</span>
-                </div>
-                <div class="nav-obj px-2 col">
-                    <span style="--i:0">C</span>
-                    <span style="--i:1">O</span>
-                    <span style="--i:2">N</span>
-                    <span style="--i:3">T</span>
-                    <span style="--i:4">A</span>
-                    <span style="--i:5">C</span>
-                    <span style="--i:6">T</span>
-                    <span style="--i:7">CONTACT</span>
 
-                    
-                </div>
+<div class="container-fluid home">
+    <div class="row navbar">
+        <div class="col-12 col-sm-4 d-flex flex-row justify-content-start align-items-center">
+            <div class="nav-obj px-2 col">
+                <span style="--i:0;--j:4;">H</span>
+                <span style="--i:1;--j:4;">O</span>
+                <span style="--i:2;--j:4;">M</span>
+                <span style="--i:3;--j:4;">E</span>
+                <span style="--i:4">HOME</span>
             </div>
-        </div>
-        <div class="row projects mx-2">
-            <div class="col-sm-3 col-12" style="display: none;">
-                <div class="p-card" >
-                    <div class="imgbox">
-                        <img src="./css/img/asteroid.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/asteroidshooter">Asteroid Shooter</a>
-                        
-                        <p>An Asteroid Shooting game with Touch Controls</p>
-                    </div>
-                </div>
+            <div class="nav-obj px-2 col">
+                <span style="--i:0;--j:5;">A</span>
+                <span style="--i:1;--j:5;">B</span>
+                <span style="--i:2;--j:5;">O</span>
+                <span style="--i:3;--j:5;">U</span>
+                <span style="--i:4;--j:5;">T</span>
+                <span style="--i:5;--j:5;">ABOUT</span>
             </div>
-            <div class="col-sm-3 col-12">
-                <div class="p-card" >
-                    <div class="imgbox">
-                        <img src="./css/img/bee.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/Catch-The-Bee">Catch The Bee</a>
-                        <p>An interactive Bee Catching Game</p>
-                    </div>
-                </div>
+            <div class="nav-obj px-2 col">
+                <span style="--i:0;--j:8;">P</span>
+                <span style="--i:1;--j:8;">R</span>
+                <span style="--i:2;--j:8;">O</span>
+                <span style="--i:3;--j:8;">J</span>
+                <span style="--i:4;--j:8;">E</span>
+                <span style="--i:5;--j:8;">C</span>
+                <span style="--i:6;--j:8;">T</span>
+                <span style="--i:7;--j:8;">S</span>
+                <span style="--i:8">PROJECTS</span>
             </div>
-            <div class="col-sm-3 col-12">
-                <div class="p-card" >
-                    <div class="imgbox">
-                        <img src="./css/img/fish.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/yourfish">Your Fish</a>
-                        <p>Feed Your Fish</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-12">
-                <div class="p-card" >
-                    <div class="imgbox">
-                        <img src="./css/img/tictactoe.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/TicTacToe">TicTacToe</a>
-                        <p>[You Know this Game Already]</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-12">
-                <div class="p-card">
-                    <div class="imgbox">
-                        <img src="./css/img/btp1.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/btp">Beat The Potato</a>
-                        <p>A TicTacToe Game With my Potato AI</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-12">
-                <div class="p-card">
-                    <div class="imgbox">
-                        <img src="./css/img/tetris.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/tetris">Tetris</a>
-                        <p>The Tetris Game</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-12">
-                <div class="p-card">
-                    <div class="imgbox">
-                        <img src="./css/img/todo.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/TodoList">To-Do List</a>
-                        <p>A website to make notes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-12">
-                <div class="p-card">
-                    <div class="imgbox">
-                        <img src="./css/img/pp.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/picturepuzzle">Puzzle</a>
-                        <p>A Picture Puzzle Game</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-12">
-                <div class="p-card">
-                    <div class="imgbox">
-                        <img src="./css/img/snake.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/snake">Snake</a>
-                        <p>The Classic Snake Game</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-12">
-                <div class="p-card">
-                    <div class="imgbox">
-                        <img src="./css/img/stickman.png" alt="" srcset="">
-                    </div>
-                    <div class="content">
-                        <a href="http://dhruvdutta.github.io/stickman">Stickman Animation</a>
-                        <p>A walking Stickman</p>
-                    </div>
-                </div>
+            <div class="nav-obj px-2 col">
+                <span style="--i:0;--j:7;">C</span>
+                <span style="--i:1;--j:7;">O</span>
+                <span style="--i:2;--j:7;">N</span>
+                <span style="--i:3;--j:7;">T</span>
+                <span style="--i:4;--j:7;">A</span>
+                <span style="--i:5;--j:7;">C</span>
+                <span style="--i:6;--j:7;">T</span>
+                <span style="--i:7">CONTACT</span>
             </div>
         </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./js/script.js"></script>
-    <script src="https://kit.fontawesome.com/d5befc3ef6.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <div class="row about px-2">
+        <div class="container mt-5 me">
+            <div class="row" id="about">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div >
+                        About
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2" >
+                <div class="col-10 offset-1 offset-sm-0 col-sm-5 d-flex justify-content-center align-items-center" >
+                    <img src="./css/img/me.jpg" class="mypicture" alt="" srcset="">
+                </div>
+                <div class="col-10 offset-1 offset-sm-0 col-sm-7 d-flex justify-content-center align-items-center">
+                    <p>I like to make projects.Projects that require skills beyond my scope.</p>
+                </div>
+            </div>
+            <div class="row" id="skills">
+                <div class="col d-flex justify-content-center align-items-center">
+                    Skills
+                </div>
+            </div>
+            <div class="row skills">
+                <div class="col"><img src="./css/img/py.png"  alt="" srcset=""></div>
+                <div class="col"><img src="./css/img/js.png"  alt="" srcset=""></div>
+                <div class="col"><img src="./css/img/boot.png" alt="" srcset=""></div>
+                <div class="col"><img src="./css/img/htm.png" alt="" srcset=""></div>
+                <div class="col"><img src="./css/img/css.png" alt="" srcset=""></div>
+                <div class="col"><img src="./css/img/ph.png" alt="" srcset=""></div>
+                <div class="col"><img src="./css/img/fire.png" alt="" srcset=""></div>
+                <div class="col"><img src="./css/img/django.png" alt="" srcset=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="row projects px-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center" id="projects">
+                    Projects
+                </div>
+            </div>
+            <div class="row mt-5 pt-5 p-cards">    
+                <div class="col-sm-3 col-12">
+                    <div class="p-card" >
+                        <div class="imgbox">
+                            <img src="./css/img/fish.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/yourfish">Your Fish</a>
+                            <p>Feed Your Fish</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="p-card" >
+                        <div class="imgbox">
+                            <img src="./css/img/bee.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/Catch-The-Bee">Catch The Bee</a>
+                            <p>An interactive Bee Catching Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="p-card" >
+                        <div class="imgbox">
+                            <img src="./css/img/tictactoe.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/TicTacToe">TicTacToe</a>
+                            <p>[You Know this Game Already]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="p-card">
+                        <div class="imgbox">
+                            <img src="./css/img/btp1.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/btp">Beat The Potato</a>
+                            <p>A TicTacToe Game With my Potato AI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="p-card">
+                        <div class="imgbox">
+                            <img src="./css/img/tetris.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/tetris">Tetris</a>
+                            <p>The Tetris Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="p-card" >
+                        <div class="imgbox">
+                            <img src="./css/img/asteroid.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/asteroidshooter">Asteroid Shooter</a>
+                            
+                            <p>An Asteroid Shooting game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="p-card">
+                        <div class="imgbox">
+                            <img src="./css/img/todo.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/TodoList">To-Do List</a>
+                            <p>A website to make notes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="p-card">
+                        <div class="imgbox">
+                            <img src="./css/img/pp.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/picturepuzzle">Puzzle</a>
+                            <p>A Picture Puzzle Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="p-card">
+                        <div class="imgbox">
+                            <img src="./css/img/snake.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/snake">Snake</a>
+                            <p>The Classic Snake Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="p-card">
+                        <div class="imgbox">
+                            <img src="./css/img/stickman.png" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <a href="http://dhruvdutta.github.io/stickman">Stickman Animation</a>
+                            <p>A walking Stickman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./js/script.js"></script>
+<script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".me"), {
+		max: 10,
+		speed: 400,
+        glare:true,
+        "max-glare":.5,
+        easing:"cubic-bezier(.03,.98,.52,.99)",
+	});
+    VanillaTilt.init(document.querySelectorAll(".projects>.container"), {
+		max: 5,
+		speed: 400,
+        glare:true,
+        "max-glare":.2,
+        easing:"cubic-bezier(.03,.98,.52,.99)",
+	});
+</script>
+<script src="https://kit.fontawesome.com/d5befc3ef6.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
