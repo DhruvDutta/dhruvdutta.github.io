@@ -6,49 +6,59 @@
     -ms-box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing: border-box;
+    color: #fff;
 }
 body{
     position: relative;
-    background-color: #e3f6f5;
-    overflow-x: hidden;
+    background-color: #091921;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#e91e63,#ffc107);
+    clip-path: circle(20% at 30% 20%);
+    z-index: -1;
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#e91e63,#ffc107);
+    clip-path: circle(20% at 70% 90%);
+    z-index: -1;
 }
 body::-webkit-scrollbar{
-    width: .5em;
+    width: .25em;
     transition: width 1s ease;
+    position: absolute;
 
 }
 body::-webkit-scrollbar:hover{
     width: .7em;
 }
 body::-webkit-scrollbar-track{
-    background: #e3f6f5;
+    background: transparent;
 }
 body::-webkit-scrollbar-thumb{
-    background: #272343;
-}
-#back{
-    position: absolute;
-    top: 0%;
-    left: 5%;
-    color: rgba(0, 0, 0, 0.2);
-    font-weight: bolder;
-    font-size: 20em;
-}
-#back span{
-    margin: -3.5%;
+    background: rgba(255, 255, 255, 0.5);
 }
 
-.main{
-    min-height: 100vh;
-}
 #hello{
     display: none;
 }
-.main svg text{
-    stroke: #d3d3d3;
-    mix-blend-mode: difference;
+.iamdhruv svg text{
+    stroke: #fff;
     font-size: 6em;
-    stroke-width: 2;
+    fill: transparent;
+    stroke-width: 1;
     animation: textanimate 4s ease-in-out forwards;
 }
 @keyframes textanimate{
@@ -58,13 +68,12 @@ body::-webkit-scrollbar-thumb{
     50%{
         fill: transparent;
     }
-    70%{
-        stroke-dasharray: 50% 0;
-        
+    90%{
     }
     100%{
         
-        fill: #d3d3d3;
+        stroke-dasharray: 50% 0;
+        fill: #fff;
     }
 }
 .heading{
@@ -72,55 +81,25 @@ body::-webkit-scrollbar-thumb{
     height: 100vh;
     width: 100vw;
 }
-.heading::before{
-    content: '';
-    position: absolute;
-    height: 100vh;
-    width: 100vh;
-    background-color: #272343;
-    transform: rotate(45deg);
-    animation: animate 2s ease-in-out forwards;
-}
-.main::before{
-    content: '';
-    position: absolute;
-    height: 200vh;
-    width: 200vh;
-    top: calc(90vh * -1.414);
-    left: -125vh;
-    background-color: #2d334a;
-    transform: rotate(50deg);
-    animation: animate1 2s ease-in-out forwards;
-}
-.iamdhruv::before{
-    content: '';
-    position: absolute;
-    height: 100vh;
-    width: 100vh;
-    bottom: calc(40vh * -1.414);
-    right: -50vh;
-    background-color: #272343;
-    transform: rotate(50deg);
-    animation: animate2 2s ease-in-out forwards;
-    z-index: -1;
-}
 
 .iamdhruv{
-    font-size: 2.5rem;
     color:#fffffe;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.home{
-    background-color: #e3f6f5;
-    min-height: 100vh;
-}
+
 .navbar{
     position: relative;
-    height: 5em;
-    background-color: #272343;
+    height: 4em;
+    background:rgba(255, 255, 255, 0.05);
     color: #e3f6f5;
-    box-shadow: 0 2px 7px #222222;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+
 }
 .navbar>div>div{
     display: flex;
@@ -128,70 +107,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
 }
-.projects{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10em;
-}
-.projects>div{
-    height: 40vh;
-}
-.p-card{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-height: 12em;
-    padding: 20px;
-    background-color: #fffffe;
-    border-radius: 3px;
-    box-shadow: 0 5px 200px rgba(0, 0, 0, 0.5);
-    transition: 1s;
-}
-.p-card p{
-    font-weight: normal;
-}
-.p-card div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.p-card:hover{
-    cursor: pointer;
-}
-.p-card:hover .content{
-    animation: cardhover .2s ease-in-out forwards ;
-}
-.p-card:hover img{
-    top: 0em;
 
-}
-.p-card a{
-    color: #2d334a;
-}
-.imgbox img{
-    position: absolute;
-    top: 1em;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 3px;
-    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    transition: .2s;
-    transition-delay: .1s;
-   
-}
-.content{
-    margin-top: -30%;
-    color: transparent;
-    font-size: 1.2em;
-    font-weight: bolder;
-}
 .nav-obj{
     overflow-y: hidden;
     position: relative;
@@ -205,7 +121,7 @@ body::-webkit-scrollbar-thumb{
 
 .nav-obj:hover span:not(:last-child){
     transition: .3s;
-    transition-delay: calc(.05s * var(--i));
+    transition-delay: calc(.3s/calc(var(--j))*var(--i) );
     transform: translateY(-100%);
     
 }
@@ -223,22 +139,9 @@ body::-webkit-scrollbar-thumb{
 }
 .nav-obj:hover span:last-child{
     transition: .3s;
-    transition-delay: calc(.05s * var(--i));
+    transition-delay: .3s;
     transform: translate(-50%,-100%);
     
-}
-@keyframes cardhover{
-    0%{    
-        margin-top: 0%;
-        color: transparent;
-    }
-    50%{
-        color: transparent;
-    }
-    100%{
-        margin-top: 25%;
-        color: #2d334a;
-    }
 }
 @keyframes animate{
     0%{
@@ -271,4 +174,85 @@ body::-webkit-scrollbar-thumb{
         right: -50vh;
         bottom:calc(40vh * -1.414);
     }
+}
+.me{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.about>div{
+    margin-bottom: 2em;
+}
+#about,#skills{
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 2em;
+    
+}
+.mypicture{
+    border-radius: .5em;
+    width: 90%;
+}
+
+.skills>div>img{
+    width: 100%;
+}
+.skills>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#projects{
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 2em;
+    
+}
+.projects>.container{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: .7em;
+}
+
+.p-card{
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 0px;
+    margin-bottom: .5em;
+    background:rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    transition: 1s;
+}
+.p-card p{
+    font-weight: normal;
+}
+.p-card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p-card:hover{
+    cursor: pointer;
+}
+.p-card:hover .content{
+    animation: cardhover .2s ease-in-out forwards ;
+}
+.p-card:hover img{
+    top: 0em;
+
+}
+.p-card a{
+    color: #fff;
+}
+.imgbox img{
+    border-radius: 3px;
+    width: 100%;
+}
+.content{
+    color: transparent;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin: .5em;
 }
