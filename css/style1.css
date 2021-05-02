@@ -234,7 +234,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 3px;
     transition: 1s;
 }
-.p-card:nth-of-type(odd){
+.p-card:nth-of-type(even){
     flex-direction: row-reverse;
 }
 .p-card:hover{
@@ -247,7 +247,7 @@ body::-webkit-scrollbar-thumb{
 
 .imgbox img{
     border-radius: 3px;
-    height: 50vh;
+    width: 40vw;
 }
 .content{
     display: flex;
