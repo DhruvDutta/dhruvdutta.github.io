@@ -15,7 +15,7 @@ body{
 
 body::before{
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -26,7 +26,7 @@ body::before{
 }
 body::after{
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -176,42 +176,53 @@ body::-webkit-scrollbar-thumb{
     }
 }
 .me{
-    background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     overflow: hidden;
 }
 .about>div{
     margin-bottom: 2em;
+    backdrop-filter: blur(2px);
+
+}
+#skills{
+    margin-top: 2em;
 }
 #about,#skills{
-    background: rgba(255, 255, 255, 0.2);
     font-size: 2em;
-    
+}
+#about{
+    margin-bottom: 1em;
 }
 .mypicture{
     border-radius: .5em;
     width: 90%;
-}
 
+}
+.skills{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
 .skills>div>img{
-    width: 100%;
+    height: 3em;
+
 }
 .skills>div{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
 #projects{
-    background: rgba(255, 255, 255, 0.2);
-    font-size: 2em;
+    font-size: 2.6em;
     
 }
 .projects>.container{
-    background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     overflow: hidden;
     font-size: .7em;
+    margin-top: 2em;
+    backdrop-filter: blur(2px);
+
 }
 
 .p-card{
@@ -219,8 +230,8 @@ body::-webkit-scrollbar-thumb{
     display: grid;
     place-items: center;
     padding: 0px;
-    margin-bottom: .5em;
-    background:rgba(255, 255, 255, 0.2);
+    margin-bottom: 2em;
+    background:rgba(255, 255, 255, 0.1);
     border-radius: 3px;
     transition: 1s;
 }
@@ -246,13 +257,19 @@ body::-webkit-scrollbar-thumb{
 .p-card a{
     color: #fff;
 }
+.imgbox{
+    width: 100%;
+}
 .imgbox img{
     border-radius: 3px;
     width: 100%;
+
 }
 .content{
     color: transparent;
     font-size: 1.2em;
     font-weight: bolder;
     margin: .5em;
+    transform: translateZ(40px) ;
+
 }
