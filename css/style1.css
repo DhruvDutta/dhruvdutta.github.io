@@ -8,6 +8,9 @@
     -webkit-box-sizing: border-box;
     color: #fff;
 }
+html{
+    scroll-behavior: smooth !important;
+}
 body{
     position: relative;
     background-color: #091921;
@@ -187,7 +190,7 @@ body::-webkit-scrollbar-thumb{
 #skills{
     margin-top: 2em;
 }
-#about,#skills{
+#about,#skills,#contact{
     font-size: 2em;
 }
 #about{
@@ -235,7 +238,7 @@ body::-webkit-scrollbar-thumb{
     transition: 1s;
 }
 .p-card:nth-of-type(even){
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
 }
 .p-card:hover{
     cursor: pointer;
@@ -247,7 +250,7 @@ body::-webkit-scrollbar-thumb{
 
 .imgbox img{
     border-radius: 3px;
-    width: 40vw;
+    width: 30vw;
 }
 .content{
     display: flex;
@@ -261,4 +264,11 @@ body::-webkit-scrollbar-thumb{
     transform: translateZ(40px) ;
     width: 50%;
 
+}
+.icons{
+    font-size: 3em;
+}
+#leet{
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
