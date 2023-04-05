@@ -101,8 +101,14 @@ body::-webkit-scrollbar-thumb{
     background:rgba(255, 255, 255, 0.05);
     color: #e3f6f5;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-
-
+    text-shadow: 2px 2px 5px #091921;
+    z-index: 999;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
 }
 .navbar>div>div{
     display: flex;
@@ -214,6 +220,9 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: .2em;
+    margin-bottom: 3em;
 }
 #projects{
     font-size: 2.6em;
@@ -225,7 +234,6 @@ body::-webkit-scrollbar-thumb{
     font-size: .7em;
     margin-top: 2em;
     backdrop-filter: blur(2px);
-
 }
 
 .p-card{
@@ -235,14 +243,12 @@ body::-webkit-scrollbar-thumb{
     padding: 10px;
     margin-bottom: 2em;
     border-radius: 3px;
-    transition: 1s;
+    transition: .5s;
 }
 .p-card:nth-of-type(even){
     flex-direction: row-reverse !important;
 }
-.p-card:hover{
-    cursor: pointer;
-}
+
 
 .p-card a{
     color: #fff;
@@ -271,4 +277,7 @@ body::-webkit-scrollbar-thumb{
 #leet{
     -webkit-filter: invert(1);
     filter: invert(1);
+}
+.contact{
+    background: linear-gradient(rgba(0,0,0,0),#111);
 }
